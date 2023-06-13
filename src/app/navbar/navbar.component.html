@@ -1,0 +1,12 @@
+<header class="header">
+    <span class="header__logo">Currency Converter &#x265B;</span>
+    <div class="currencies-wrapper" *ngIf="data">
+      <div class="currency" *ngFor="let currency of data">
+        <div class="currency__desc">
+          <span class="currency__name">{{ currency.quotecurrency }}</span>
+        </div>
+        <div class="line"></div>
+        <span class="currency__value">{{ currency.inverse }} UAH</span>
+      </div>
+    </div>
+</header>
