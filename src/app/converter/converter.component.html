@@ -1,0 +1,26 @@
+<div class="converter">
+  <form class="converter__form">
+    <span class="converter__explanation"><span style="color: red;">* </span>Select the currency and start typing</span>
+    <div class="converter__main-content">
+      <div class="converter__box">
+        <select class="converter__select" name="currency-1" (change)="onOptionChangeCurr1($event.target)">
+          <option value="UAH" selected>UAN ₴(hrivnya)</option>
+          <option value="USD">USD $(dollar)</option>
+          <option value="EUR">EUR €(euro)</option>
+        </select>
+        <input class="converter__input" pattern="[0-9]+(\.[0-9]+)?" value="{{ currencyValue1 }}" name="currency-1-value"
+          type="text" (input)="onInputChangeCurr1($event.target)">
+      </div>
+      <img class="converter__image" src="../../assets/imgs/converter/curr_arrow.png" alt="double arrow">
+      <div class="converter__box">
+        <input class="converter__input" pattern="[0-9]+(\.[0-9]+)?" value="{{ currencyValue2 }}" name="currency-1-value"
+          type="text" (input)="onInputChangeCurr2($event.target)">
+        <select class="converter__select" name="currency-1" (change)="onOptionChangeCurr2($event.target)">
+          <option value="UAH">UAN ₴(hrivnya)</option>
+          <option value="USD" selected>USD $(dollar)</option>
+          <option value="EUR">EUR €(euro)</option>
+        </select>
+      </div>
+    </div>
+  </form>
+</div>
