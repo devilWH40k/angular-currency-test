@@ -1,0 +1,1 @@
+export const validateValue = (value: string): boolean => isFinite(+value) && value !== "";
