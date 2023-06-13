@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "normalize.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: url(assets/imgs/main-background.svg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
